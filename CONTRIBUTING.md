@@ -1,9 +1,6 @@
 # Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
-
-Please note we have a code of conduct, please follow it in all your interactions with the project.
 
 ## Pull Request Process
 
@@ -19,22 +16,14 @@ Please note we have a code of conduct, please follow it in all your interactions
 3. Carry out carefully all recommendations of the project supervisors and report on progress.
 4. Immediately communicate that the error has been fixed and close the thread. 
 
-## Code of Conduct
-
-Check out our [Code of Conduct](https://github.com/CachyOS/CachyOS-settings/blob/master/CODE_OF_CONDUCT.md)
-to learn the rules of our community. 
-
 ## Contact us
 
 If you have any questions, you can contact us by email. 
 
-**Peter Jung:** <admin@ptr1337.dev> <br />
+**ALEX5402:** <bd> <br />
 
-**Vladislav Nepogodin:** <nepogodin.vlad@gmail.com> <br />
-
-**Piotr Gorski:** <piotrgorski@cachyos.org> <br />
 
 You can also join the discussion on the following platforms:
 
-**Discord:** <https://discord.gg/cachyos-862292009423470592> <br />
-**Telegram:** <https://t.me/+zCzPX4cAFjk1MTYy> <br />
+**Discord:** <https://discord.gg/TDqUrCWWPq> <br />
+**Telegram:** <https://t.me/alex5402> <br />
