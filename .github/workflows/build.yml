@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+    tags:
+      - "v*"
+  pull_request:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: get the jq
+        run: sudo apt install jq -y
+
+      - name: downlaod the latest-tar
+        run: curl -sL https://raw.githubusercontent.com/ALEX5402/Vortex-thermal/main/.github/download-latest.sh | bash
+
+      - name: move files
+        run: |
+          mv latest-release.tar.gz ./latest-release.tar.gz
+
+      - name: save hashes in env
+        run: |
+          echo '```' > hashes.txt
+          echo "SHA256 hashes:" >> hashes.txt
+          sha256sum latest-release.tar.gz >> hashes.txt
+          echo '```' >> hashes.txt
+
+      - name: release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/v')
+        with:
+          body_path: hashes.txt
+          files: |
+            ./latest-release.tar.gz
