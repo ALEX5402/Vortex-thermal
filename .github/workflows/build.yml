@@ -31,10 +31,7 @@ jobs:
 
       - name: save hashes in env
         run: |
-          echo '```' > hashes.txt
-          echo "SHA256 hashes:" >> hashes.txt
-          sha256sum latest-release.tar.gz >> hashes.txt
-          echo '```' >> hashes.txt
+          sha256sum latest-release.tar.gz | awk '{print $1}' >> hashes.txt
 
       - name: release
         uses: softprops/action-gh-release@v1
