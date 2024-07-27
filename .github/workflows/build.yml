@@ -25,9 +25,9 @@ jobs:
       - name: downlaod the latest-tar
         run: curl -sL https://raw.githubusercontent.com/ALEX5402/Vortex-thermal/master/.github/download-latest.sh | bash
 
-      - name: move files
+      - name: check files
         run: |
-          mv latest-release.tar.gz ./latest-release.tar.gz
+          ls -a
 
       - name: save hashes in env
         run: |
