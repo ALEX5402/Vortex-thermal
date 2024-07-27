@@ -23,7 +23,7 @@ jobs:
         run: sudo apt install jq -y
 
       - name: downlaod the latest-tar
-        run: curl -sL https://raw.githubusercontent.com/ALEX5402/Vortex-thermal/main/.github/download-latest.sh | bash
+        run: curl -sL https://raw.githubusercontent.com/ALEX5402/Vortex-thermal/master/.github/download-latest.sh | bash
 
       - name: move files
         run: |
