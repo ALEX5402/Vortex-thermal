@@ -22,3 +22,4 @@ This repository contains configuration files that tweak sysctl values, add udev 
 - Easily switch between amdpstate-epp and amdpstate-guided
 - Upload logs with paste-cachyos, for example: sudo dmesg | paste-cachyos
 - View up to 10 process memory/swap usage (topmem)
+![Vortex-thermaks](https://github.com/user-attachments/assets/c74db376-e043-4bab-ba40-2afe97f13126)
