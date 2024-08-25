@@ -11,6 +11,6 @@ TEST!="/dev/zram0", GOTO="zram_end"
 # pages may not be desirable because a process may want to access a file at any
 # time, whereas if it is preempted, it will cause an additional read cycle from
 # the disk.
-SYSCTL{vm.swappiness}="130"
+# SYSCTL{vm.swappiness}="130"
 
 LABEL="zram_end"
